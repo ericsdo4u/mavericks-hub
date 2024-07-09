@@ -1,4 +1,4 @@
-package com.maverickshube.maverickshube.dtos;
+package com.maverickshube.maverickshube.dtos.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.maverickshube.maverickshube.models.Category;

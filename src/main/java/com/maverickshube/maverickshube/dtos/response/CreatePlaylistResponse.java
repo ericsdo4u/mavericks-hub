@@ -1,4 +1,4 @@
-package com.maverickshube.maverickshube.dtos;
+package com.maverickshube.maverickshube.dtos.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -13,7 +13,8 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
-public class AddMediaToPlaylistResponse {
+public class CreatePlaylistResponse {
+
     @JsonProperty("playlist_id")
     private Long id;
     @JsonProperty("playlist_name")
@@ -31,5 +32,5 @@ public class AddMediaToPlaylistResponse {
 
     private UserResponse uploader;
 
-
+    private String message;
 }

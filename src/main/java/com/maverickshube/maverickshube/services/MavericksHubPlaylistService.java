@@ -1,6 +1,12 @@
 package com.maverickshube.maverickshube.services;
 
-import com.maverickshube.maverickshube.dtos.*;
+import com.maverickshube.maverickshube.dtos.request.AddMediaToPlaylistRequest;
+import com.maverickshube.maverickshube.dtos.request.CreatePlaylistRequest;
+import com.maverickshube.maverickshube.dtos.request.ShufflePlaylistRequest;
+import com.maverickshube.maverickshube.dtos.response.AddMediaToPlaylistResponse;
+import com.maverickshube.maverickshube.dtos.response.CreatePlaylistResponse;
+import com.maverickshube.maverickshube.dtos.response.MediaResponse;
+import com.maverickshube.maverickshube.dtos.response.ShufflePlaylistResponse;
 import com.maverickshube.maverickshube.exceptions.PlaylistNotFoundException;
 import com.maverickshube.maverickshube.exceptions.UserNotFoundException;
 import com.maverickshube.maverickshube.models.Media;

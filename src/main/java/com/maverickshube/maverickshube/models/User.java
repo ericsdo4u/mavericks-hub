@@ -8,16 +8,20 @@ import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.util.Set;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
+import static java.time.LocalDateTime.now;
 
-@Setter
-@Getter
 @Entity
 @Table(name = "users")
+@Setter
+@Getter
+@NoArgsConstructor
 public class User {
     @Id
     @GeneratedValue(strategy = IDENTITY)
@@ -25,20 +29,27 @@ public class User {
     @Column(unique = true)
     private String email;
     private String password;
-    @Setter(AccessLevel.NONE)
-    @JsonSerialize(using = LocalDateTimeSerializer.class)
-    @JsonDeserialize(using = LocalDateTimeDeserializer.class)
-    private LocalDateTime timeUpdated;
+    private Category category;
     @Setter(AccessLevel.NONE)
     @JsonSerialize(using = LocalDateTimeSerializer.class)
     @JsonDeserialize(using = LocalDateTimeDeserializer.class)
     private LocalDateTime timeCreated;
+    @JsonSerialize(using = LocalDateTimeSerializer.class)
+    @JsonDeserialize(using = LocalDateTimeDeserializer.class)
+    @Setter(AccessLevel.NONE)
+    private LocalDateTime timeUpdated;
+    @ElementCollection
+    @Enumerated(EnumType.STRING)
+    private Set<Authority> authorities;
+
+
     @PrePersist
     private void setTimeCreated(){
-        this.timeCreated = LocalDateTime.now();
+        timeCreated = now();
     }
+
     @PreUpdate
     private void setTimeUpdated(){
-        this.timeUpdated = LocalDateTime.now();
+        timeUpdated = now();
     }
 }

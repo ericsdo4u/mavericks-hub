@@ -1,8 +1,8 @@
 package com.maverickshube.maverickshube.controllers;
 
 import com.github.fge.jsonpatch.JsonPatch;
-import com.maverickshube.maverickshube.dtos.UploadMediaRequest;
-import com.maverickshube.maverickshube.dtos.UploadMediaResponse;
+import com.maverickshube.maverickshube.dtos.request.UploadMediaRequest;
+import com.maverickshube.maverickshube.dtos.response.UploadMediaResponse;
 import com.maverickshube.maverickshube.services.MediaService;
 import lombok.AllArgsConstructor;
 

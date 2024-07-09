@@ -7,10 +7,10 @@ import com.github.fge.jsonpatch.JsonPatch;
 import com.github.fge.jsonpatch.JsonPatchOperation;
 import com.github.fge.jsonpatch.ReplaceOperation;
 
-import com.maverickshube.maverickshube.dtos.MediaResponse;
-import com.maverickshube.maverickshube.dtos.UpdateMediaResponse;
-import com.maverickshube.maverickshube.dtos.UploadMediaRequest;
-import com.maverickshube.maverickshube.dtos.UploadMediaResponse;
+import com.maverickshube.maverickshube.dtos.response.MediaResponse;
+import com.maverickshube.maverickshube.dtos.response.UpdateMediaResponse;
+import com.maverickshube.maverickshube.dtos.request.UploadMediaRequest;
+import com.maverickshube.maverickshube.dtos.response.UploadMediaResponse;
 import com.maverickshube.maverickshube.models.Category;
 import com.maverickshube.maverickshube.models.Media;
 import lombok.extern.slf4j.Slf4j;

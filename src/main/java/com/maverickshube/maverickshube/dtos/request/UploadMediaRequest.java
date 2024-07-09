@@ -1,4 +1,4 @@
-package com.maverickshube.maverickshube.dtos;
+package com.maverickshube.maverickshube.dtos.request;
 
 
 import com.maverickshube.maverickshube.models.Category;

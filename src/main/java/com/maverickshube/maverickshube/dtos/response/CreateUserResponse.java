@@ -1,4 +1,4 @@
-package com.maverickshube.maverickshube.dtos;
+package com.maverickshube.maverickshube.dtos.response;
 
 import lombok.Getter;
 import lombok.Setter;

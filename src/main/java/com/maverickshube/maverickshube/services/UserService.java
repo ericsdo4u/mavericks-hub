@@ -2,8 +2,8 @@ package com.maverickshube.maverickshube.services;
 
 
 
-import com.maverickshube.maverickshube.dtos.CreateUserRequest;
-import com.maverickshube.maverickshube.dtos.CreateUserResponse;
+import com.maverickshube.maverickshube.dtos.request.CreateUserRequest;
+import com.maverickshube.maverickshube.dtos.response.CreateUserResponse;
 import com.maverickshube.maverickshube.models.User;
 import org.springframework.stereotype.Service;
 
@@ -14,4 +14,5 @@ public interface UserService {
 
     User getUserById(long id);
 
+    User getUserByUsername(String username);
 }

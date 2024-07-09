@@ -1,7 +1,7 @@
 package com.maverickshube.maverickshube.utils;
 
 
-import com.maverickshube.maverickshube.dtos.UploadMediaRequest;
+import com.maverickshube.maverickshube.dtos.request.UploadMediaRequest;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.web.multipart.MultipartFile;
 
